@@ -26,7 +26,11 @@ function downloadImageByURL(url, filePath) {
 			throw err;
 		})
 		.on("response", function(response) {
-			console.log("Response Status Code:", response.statusCode);
+			if (response.statusCode !== 200) {
+				console.log("Status Code", response.statusCode, "at", url);
+			} else {
+				console.log("Image successfully downloaded from", url);
+			}
 		})
 		.pipe(fs.createWriteStream(filePath));
 }
