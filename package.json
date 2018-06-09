@@ -4,6 +4,8 @@
   "description": "## About",
   "main": "dl_avatar.js",
   "dependencies": {
+    "fs": "0.0.1-security",
+    "mkdirp": "^0.5.1",
     "request": "^2.87.0"
   },
   "devDependencies": {},
