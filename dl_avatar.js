@@ -1,4 +1,5 @@
 var request = require("request");
+var auth = require("./secret.js");
 var user = process.argv[2];
 var repo = process.argv[3];
 
@@ -8,6 +9,7 @@ function getRepoContributors(user, repo, cb) {
 		headers: {
 			"User-Agent": "request"
 		},
+		authorization: auth.GITHUB_TOKEN
 	}
 	request(options, function(err, res, body) {
 		cb(err, body);
@@ -16,5 +18,8 @@ function getRepoContributors(user, repo, cb) {
 
 getRepoContributors("jquery", "jquery", function(err, result) {
 	console.log("Errors:", err);
-	console.log("Result:", result);
+	var json = JSON.parse(result);
+	json.forEach(function(e) {
+		console.log(e.avatar_url);
+	});
 });
