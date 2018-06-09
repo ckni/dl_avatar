@@ -2,7 +2,7 @@
 
 ## About
 
-This is a simple Node.JS application that will download the avatars of all contributors to any specified GitHub Project.
+A simple Node.js application that will download the avatars of all contributors to any specified GitHub Project.
 
 ## Usage
 
@@ -21,4 +21,11 @@ Replace `YOUR_TOKEN_HERE` with a [GitHub token](https://github.com/settings/toke
 
 Run `dl_avatar.js <repo owner> <repo name>`.
 
-Where <repo owner> is the username of the owner of the repository and <repo name> is the name of the respository.
+Where `<repo owner>` is the username of the owner of the repository and `<repo name>` is the name of the respository.
+
+## Dependencies
+
+* [Node.js](https://nodejs.org)
+* [request](https://github.com/request/request)
+* [mkdirp](https://www.npmjs.com/package/mkdirp)
+* [fs](https://nodejs.org/api/fs.html)
