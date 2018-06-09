@@ -2,6 +2,8 @@
 
 A simple Node.js application that will download the avatars of all contributors to any specified GitHub Project.
 
+Note: this project has replaced [github-avatar-downloader](https://github.com/ckni/github-avatar-downloader)
+
 ## Usage
 
 Clone or download this repository.
