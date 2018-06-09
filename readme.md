@@ -1,6 +1,4 @@
-# Avatar Downloader
-
-## About
+# GitHub Avatar Downloader
 
 A simple Node.js application that will download the avatars of all contributors to any specified GitHub Project.
 
@@ -25,7 +23,7 @@ Where `<repo owner>` is the username of the owner of the repository and `<repo n
 
 ## Dependencies
 
-* [Node.js](https://nodejs.org)
-* [request](https://github.com/request/request)
-* [mkdirp](https://www.npmjs.com/package/mkdirp)
-* [fs](https://nodejs.org/api/fs.html)
+* Node.js - https://nodejs.org
+* Request - https://github.com/request/request
+* Mkdirp - https://www.npmjs.com/package/mkdirp
+* Fs - https://nodejs.org/api/fs.html
